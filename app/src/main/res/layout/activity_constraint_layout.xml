@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistem Informasi POLIJE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_editor_absoluteY="80dp"
+        android:textSize="25dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardMaxElevation="20dp"
+        android:gravity="center"
+        android:background="#E4F1FF"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/polije"
+            android:layout_marginBottom="20dp"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="200dp"
+            android:hint="Masukkan email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="200dp"
+            android:hint="Masukkan password "
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
