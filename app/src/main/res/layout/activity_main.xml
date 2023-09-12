@@ -184,6 +184,27 @@
                 android:layout_height="wrap_content"
                 android:text="Scroll View"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="100dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/cardview_dark_background"
+                    android:src="@drawable/scroll" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horizontal Scroll View"/>
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>

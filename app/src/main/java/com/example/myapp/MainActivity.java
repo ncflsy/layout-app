@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         CardView cardView5 = findViewById(R.id.card5);
         CardView cardView6 = findViewById(R.id.card6);
         CardView cardView7 = findViewById(R.id.card7);
+        CardView cardView8 = findViewById(R.id.card8);
         //card 1
         cardView1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -75,6 +76,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(MainActivity.this, ScrollView.class);
+                startActivity(intent);
+            }
+        });
+        //card 8
+        cardView8.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, HorizontalScroll.class);
                 startActivity(intent);
             }
         });
